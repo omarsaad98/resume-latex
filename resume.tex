@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Omar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[inline]{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- PAGE SETUP --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- FORMATTING --------------------
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Set document height
+\setlength{\textheight}{750pt}
+\setlength{\footskip}{4.08003pt}
+\setlength{\voffset}{15pt}
+
+% -------------------- CUSTOM COMMANDS --------------------
+% Item commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% List environment commands
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Heading commands
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% -------------------- DOCUMENT CONTENT --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \vspace{-4pt}
+  \color{gray}
+  \small{Sist oppdatert: 10. Januar, 2024}
+\end{flushright}
+
+\vspace{-35pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Omar Saad} \\ \vspace{8pt}
+    \small 
+        \faIcon{linkedin}
+        \href{https://www.linkedin.com/in/omarsaad-no}{linkedin.com/in/omarsaad-no} $\;|\;$
+        \faIcon{envelope}
+        \href{mailto:omar.saad0705@gmail.com}{omar.saad0705@gmail.com} $\;|\;$
+        \faIcon{phone}
+        \href{tel:+4746961283}{+47\,469\,61\,283}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Utdanning}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+      {\textbf{Universitetet i Bergen} \\
+      \small{Master i informatikk: Maskinlæring}}{Aug 2021 - Jun 2023}
+
+    \resumeProjectHeading
+      {\small{Bachelor i informatikk: Datateknologi}}{Aug 2017 - Jun 2020}
+
+    \vspace{-5pt}
+    \subsection{Relevante emner}
+      \textbf{Karakterer:} Toppkarakterer i matematikk og programmering.\\
+      \textbf{Relevante emner:} Videregående programmering, Objektorientert programmering, Algoritmer, Programutvikling, Networking, Programmeringsspråk, Parallellprogrammering, Multiprogrammering, Maskinlæring (Lingvistikk, Topologi, Dyp læring) \\
+      \textbf{Utmerkelser:} Topp 3.97\% på Abelkonkurransen. Topp 10 på Nasjonal programmeringskonkurranse. Vinnerlag på diverse konkurranser (Deloitte CTF finalist, CardHax CTF vinner)
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Ferdigheter}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programmeringsspråk}{: Java, Python, JavaScript/TypeScript, HTML/CSS} \\
+     \textbf{Verktøy}{: Git/GitHub/BitBucket, CI/Actions/Pipelines, VSCode, PowerShell, bash} \\
+     \textbf{Infrastruktur}{: Azure cloud, Google cloud, Terraform, Kubernetes, helm, certificates} \\
+     \textbf{Frameworks}{: React, Node.js, Next.js, WebPack} \\
+     \textbf{Scientific}{: pandas, NumPy, Matplotlib, pytorch ML}
+    }}
+ \end{itemize}
+
+% -------------------- LANGUAGES --------------------
+\section{Språk}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            \textbf{Arabisk}{: Morsmål. muntlig, høyt nivå} $\quad$
+            \textbf{Engelsk}{: Flytende. Høyt nivå, formelt} $\quad$
+            \textbf{Norsk}{: Flytende.}
+        }}
+    \end{itemize}
+
+% -------------------- EXPERIENCE --------------------
+\section{Erfaring}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Stacc AS} $|$ \footnotesize\emph{Privat IT FinTech selskap. 200+ ansatte} \\
+            \small{Fulltidsansatt Systemutvikler, infrastruktur}}
+            {Jun 2020 -- Aug 2021}
+            \resumeItemListStart
+                \item Hadde fult ansvar for planlegging, utvikling og produksjonssetting av et utviklingsverktøy i regi av ny lisensieringsmodell, noe som resulterte i økt produktivitet i utviklingen av nye kundeprosjekter.
+                \item Hadde hovedansvar for utvikling og server administrasjon for en ny saksbehandlingsløsning på et kundeprosjekt hos Nordea Sverige, og som resultat av god leveranse bidro til et sterkt og solid kundeforhold.
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\small{Deltidsansatt Systemutvikler, infrastruktur}}
+            {Sep 2021 -- Apr 2022}
+            \resumeItemListStart
+                \item Fungerte som senior utvikler og tok ansvar for opplæring av nye utviklere, som tok kun 2 uker til nye utviklere var selvfungerende og produktive.
+                \item Planla forbedring av utviklingsprosessen og utvikling av CI for å imøtekomme et større antall utviklere på Nordea kundeprosjektet, noe som resulterte i redusert konflikt blant individuelle features og introduksjon av bugs gjennom code review.
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\small{Fulltidsansatt Systemutvikler, infrastruktur}}
+            {Jun 2023 -- nåværende}
+            \resumeItemListStart
+                \item Med å bygge et nytt infrastruktur team som skal bygge og administrere bunnstrukturen til alle kundeprosjektene.
+                \item Bidro med planlegging og arkitektur av et oppsett som skal generalisere deployment og administrasjon av de forskjellige kundeprosjektene for å etterkomme et voksende etterspørsel.
+                \item Dette er en spesielt lærerik opplevelse ettersom teamet har svært krevende ambisjoner og mye nytt og cutting-edge teknologi som skal brukes til sitt fulle potensiale.
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\textbf{Universitetet i bergen} \\
+            \small{Vitenskapelig assistent. Innføring i programmering, OOP, datastrukturer, algoritmer}}
+            {Aug 2018 -- Apr 2021}
+            \resumeItemListStart
+                \item Var leder for gruppeundervisning i emnene jeg var vitenskapelig assistent og var faglig hjelpemiddel for studenter, noe som hjalp meg utvikle min faglige kunnskap.
+                \item Assisterte med retting og godkjenning av obligatoriske innleveringer, som ga meg innsikt i opplæringsprosessen til studenter og gjengående mønster i dette.
+                \item Planla, utviklet og holdt kræsjkurs i fagene "algoritmer" og "innføring i programmering", noe jeg fikk veldig positiv tilbakemelding på, derav godt strukturert og fullstendig.
+            \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}
